@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Özür Dilerim Gözde</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #8b0000;
+    }
+    p {
+      font-size: 1.2em;
+      margin-top: 40px;
+    }
+    .message {
+      background-color: #1a1a1a;
+      border: 2px solid #ff6347;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      display: inline-block;
+      width: 70%;
+      text-align: left;
+    }
+    .bottom-message {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1em;
+      color: white;
+    }
+    .image-bottom {
+      margin-top: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .image-bottom img {
+      width: 130px;
+      height: 130px;
+      display: inline-block;
+    }
+    .affetmiyorum-btn, .affetim-btn {
+      padding: 5px 10px;
+      text-decoration: none;
+      font-size: 0.8em;
+      border-radius: 5px;
+      display: inline-block;
+      color: white;
+      cursor: pointer;
+    }
+    .affetmiyorum-btn {
+      background-color: #8b0000;
+    }
+    .affetmiyorum-btn:hover {
+      background-color: #5c0000;
+    }
+    .affetim-btn {
+      background-color: #28a745;
+    }
+    .affetim-btn:hover {
+      background-color: #218838;
+    }
+    .rainbow-text span {
+      font-size: 1.4em;
+      font-weight: bold;
+      display: inline-block;
+    }
+    @media (max-width: 600px) {
+      .message {
+        width: 90%;
+      }
+      .image-bottom {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Güzelime Özür Dilerim</h1>
+  <div class="rainbow-text">
+    <span style="color: yellow;">S</span>
+    <span style="color: blue;">e</span>
+    <span style="color: pink;">n</span>
+    <span style="color: green;">i</span>
+    <span style="color: white;"> </span>
+    <span style="color: brown;">ç</span>
+    <span style="color: orange;">o</span>
+    <span style="color: red;">k</span>
+    <span style="color: white;"> </span>
+    <span style="color: yellow;">s</span>
+    <span style="color: blue;">e</span>
+    <span style="color: gray;">v</span>
+    <span style="color: green;">i</span>
+    <span style="color: white;">y</span>
+    <span style="color: red;">o</span>
+    <span style="color: red;">r</span>
+    <span style="color: white;">u</span>
+    <span style="color: maroon;">m</span>
+    <span style="color: white;"> </span>
+    <span style="color: pink;">&lt;</span>
+    <span style="color: pink;">3</span>
+  </div>
+  <div class="message">
+    <p>Güzelim, seni üzdüğüm için çok üzgünüm. Hatalarımın farkındayım ve seni kırdığım için kendimi çok kötü hissediyorum. Umarım beni affedebilirsin. Seninle her şeyin daha rengarenk ve güzel olacağına inanıyorum.</p>
+  </div>
+  <div class="image-bottom">
+    <a href="#" class="affetim-btn" onclick="changePage()">Affetim</a>
+    <img src="https://yastatic.net/naydex/yandex-search/1AuOY0200/95bcd6Vpja/sHGCqyjiiKkfBwb7LMtGhNr8iqkyx5sTW0ktXyrufnH5GFMjBbHrqddQFsomt8EOmRXmBXsRCLQ_htF5TUvW2aUlkOdro579SUIQsGDMT4DFt5fhMoCHQVBeNg1-piAu9RoETG7CmY2weXfiU8fqT90ErR4rSw-yf5qCJUVXw8mZTw" alt="Image">
+    <a href="#" class="affetmiyorum-btn" onclick="this.style.display='none'">Affetmiyorum</a>
+  </div>
+  <div class="bottom-message">Affet beni balım..</div>
+
+  <script>
+    function changePage() {
+      document.body.style.backgroundColor = '#f7c6f4'; // Change background to pink
+      document.querySelector('h1').style.display = 'none'; // Hide title
+      document.querySelector('.message').style.display = 'none'; // Hide the message
+      document.querySelector('.image-bottom').style.display = 'none'; // Hide the buttons and image
+      document.querySelector('.bottom-message').style.display = 'none'; // Hide bottom message
+      document.body.innerHTML += '<h1 style="color: #ff6347;">SENİ ÇOOOOOK SEVİYORUM GÜZELİM <3</h1>';
+    }
+  </script>
+</body>
+</html>
